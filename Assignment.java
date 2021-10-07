@@ -176,11 +176,22 @@ public class CodingAssigment {
         
         
         //12. Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+        public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket){
+            boolean check = false;
+            
+            if(isHotOutside && (moneyInPocket > 10.50)) {
+                check = true;
+            }
+            
+            return true;
+        }
         
         
         
-        
-        //13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it.
-
+        //13. method prints out how much money you should set aside for savings every month. Takes in monthlySalary as an argument and returns savings amount
+        public static double savingsAccount(double monthlySalary) {
+            
+            return monthlySalary * 0.2;
+        }
         
 }
